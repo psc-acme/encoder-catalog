@@ -1,0 +1,39 @@
+{
+    "name": "psc-acme/encoder-catalog",
+    "description": "Package encoder-catalog for psc-acme organization",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\EncoderCatalog\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.3",
+        "symfony/lock": "^7.0",
+        "laravel/framework": "^11.0",
+        "psr/event-dispatcher": "^1.0",
+        "psc-acme/sdk-cart": "^1.0",
+        "psc-acme/tracker-product": "^1.0"
+    },
+    "require-dev": {
+        "vimeo/psalm": "^5.0"
+    },
+    "minimum-stability": "stable",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
